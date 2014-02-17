@@ -1,0 +1,12 @@
+{
+    "__comment1__": "Do not edit litemod.json directly. Edit build/litemod.template.json and do an Ant build.",
+    "__comment2__": "Actual comments in this file confuse the JSON parser when deployed. :/",
+
+    "name": "${ant.project.name}",
+    "mcversion": "${litemodversion}",
+    "version": "${version}.${build.number}-mc${litemodversion}",
+    "revision": "${build.number}",
+    "author": "${author}",
+    "description": "Macro/Keybind Mod integration for Watson.",
+    "dependsOn": "watson,macros"
+}
