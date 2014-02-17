@@ -388,7 +388,7 @@ Macro[280].Macro=$${ Toggle(@show_watson_overlay); IF(@show_watson_overlay && WA
 Macro[281].Macro=/lb block crops potato carrot nether_warts world "world" time $$[time[1d,12h,6h,3h]] sum p
 
 # CONTROL_TOPGLASSBUTTON
-Macro[282].Macro=/lb block 20 102 world "world" time $$[time[1d,12h,6h,3h]] sum p
+Macro[282].Macro=/lb block 20 102 95 160 world "world" time $$[time[1d,12h,6h,3h]] sum p
 
 # CONTROL_TOPREDSTONEBUTTON
 Macro[283].Macro=/lb block 29 33 55 75 76 93 94 123 124 world "world" time $$[time[1d,12h,6h,3h]] sum p
