@@ -18,20 +18,10 @@ public class MacroEventProviderWatson implements IMacroEventProvider
    */
   public static String ON_WATSON_DISPLAY   = "onWatsonDisplay";
 
-  // /**
-  // * ID of the onWatsonDisplay event.
-  // */
-  // public static int ON_WATSON_DISPLAY_ID = 1250;
-
   /**
    * Name of the onWatsonDisplay event.
    */
   public static String ON_WATSON_SELECTION = "onWatsonSelection";
-
-  // /**
-  // * ID of the onWatsonSelection event.
-  // */
-  // public static int ON_WATSON_SELECTION_ID = 1251;
 
   // --------------------------------------------------------------------------
   /**
