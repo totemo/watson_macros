@@ -4,7 +4,7 @@
 #
 
 # Version number of the mod which saved this file. ***Do not alter this value!***
-version=1002
+version=1101
 
 #
 # Settings
@@ -165,7 +165,7 @@ keyboard.symbols={42,30}{54,30}{156,17}{200,24}{203,27}{205,26}{208,25}{248,24}{
 layout.bindings.loadatstartup=1
 
 # Item ID/damage values to include in the items list that aren't automatically enumerated, use {id} for base items and {id:damage} for specific damage values
-list.items.include={18:2}{80}
+list.items.include={80}{18:2}
 
 # Base directory for ancilliary macro config files, relative to the Minecraft directory. Use . to use the Minecraft directory (old behaviour)
 macrosdirectory=/mods/macros/
@@ -256,13 +256,6 @@ Macro[9].Control=1
 Macro[10].Macro=/check p:9
 Macro[10].Control=1
 
-# KEY_EQUALS
-Macro[13].Macro=/count-entities 200 chicken cow sheep pig villager skeleton zombie spider
-Macro[13].Control=1
-
-# KEY_W
-Macro[17].Macro=$${WATSON("/w display")}$$
-
 # KEY_T
 Macro[20].Macro=$${ECHO(/trace-r %WATSON_PLAYER% 30);}$$
 Macro[20].Control=1
@@ -294,22 +287,6 @@ Macro[49].Control=1
 # KEY_M
 Macro[50].Macro=/modmode
 Macro[50].Control=1
-
-# KEY_F4
-Macro[62].Macro=/modmode
-
-# KEY_MWHEELUP
-Macro[248].Macro=$${WATSON("/w tp prev")}$$
-Macro[248].Control=1
-
-# KEY_MWHEELDOWN
-Macro[249].Macro=$${WATSON("/w tp")}$$
-Macro[249].Control=1
-
-# KEY_RMOUSE
-Macro[251].Macro=$${WATSON("/w pre")}$$
-Macro[251].Condition=TRUE
-Macro[251].Control=1
 
 # CONTROL_RATIOBUTTON
 Macro[257].Macro=$${WATSON("/w ratio")}$$

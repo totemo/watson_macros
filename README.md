@@ -121,34 +121,19 @@ The sample configuration also binds the following key combinations:
     <th>Event</th> <th>Action</th>
   </tr>
   <tr>
-    <td>Ctrl-w</td> <td>Toggle the Watson display on or off.</td>
-  </tr>
-  <tr>
     <td>Ctrl-o</td> <td>Toggle the Watson overlay on or off.</td>
   </tr>
   <tr>
     <td>Ctrl-n</td> <td>Run "/lb next" to request the next page of LogBlock query results.</td>
   </tr>
   <tr>
-    <td>Ctrl-c</td> <td>Query all edits by the most recently selected player in a 30 block radius.  Use the LogBlock inspector tool to select the player by querying a single edit first.</td>
+    <td>Ctrl-c</td> <td>Query all edits by the most recently selected player in a 30 block radius.  Use the LogBlock inspector tool to select the player by querying a single edit first.  The Macro/Keybind script is: $${ECHO(/lb coords player %WATSON_PLAYER% area 30);}$$</td>
   </tr>
   <tr>
-    <td>Ctrl-t</td> <td>Query the total number of constructive and destructive edits by the most recently selected player in a 30 block radius.  Use the LogBlock inspector tool to select the player by querying a single edit first.</td>
+    <td>Ctrl-t</td> <td>Query the total number of constructive and destructive edits by the most recently selected player in a 30 block radius.  Use the LogBlock inspector tool to select the player by querying a single edit first.  The bound Macro/Keybind script assumes a /trace-r &lt;player&gt; &lt;range&gt; command.  Roughly equivalent code that runs LogBlock directly would be: $${ECHO(/lb player %WATSON_PLAYER% area 30 time 28d sum blocks);}$$</td>
   </tr>
   <tr>
-    <td>Ctrl-y</td> <td>Query the total number of constructive and destructive edits by the most recently selected player with no distance restriction.  Use the LogBlock inspector tool to select the player by querying a single edit first.</td>
-  </tr>
-  <tr>
-    <td>Ctrl-Mouse-Scroll-Down</td> <td>Teleport to the next ore deposit (/w tp).</td>
-  </tr>
-  <tr>
-    <td>Ctrl-Mouse-Scroll-Up</td> <td>Teleport to the previous ore deposit (/w tp prev).</td>
-  </tr>
-  <tr>
-    <td>Ctrl-Right-Mouse-Button</td> <td>Query previous edits (/w pre).</td>
-  </tr>
-  <tr>
-    <td>F4</td> <td>Toggle ModMode (issue the /modmode command).</td>
+    <td>Ctrl-y</td> <td>Query the total number of constructive and destructive edits by the most recently selected player with no distance restriction.  Use the LogBlock inspector tool to select the player by querying a single edit first.  The bound Macro/Keybind script assumes a /trace &lt;player&gt; command.  Roughly equivalent code that runs LogBlock directly would be: $${ECHO(/lb player %WATSON_PLAYER% area 10000 time 28d sum blocks);}$$ </td>
   </tr>
   <tr>
     <td>Ctrl-m</td> <td>Toggle ModMode (issue the /modmode command).</td>
@@ -157,6 +142,8 @@ The sample configuration also binds the following key combinations:
     <td>Ctrl-1 through Ctrl-9</td> <td>Issue the commands /check p:1 through /check p:9, for use with the ModReq plugin.</td>
   </tr>
 </table>
+
+Note that as of version 0.12.0, Watson itself supports configurable keybinds for some common Watson commands.
 
 
 Contact Details
