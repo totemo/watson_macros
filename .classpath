@@ -9,5 +9,7 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/CommonLib"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/MacrosAPI"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/MacrosMod"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MacrosLib"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MacrosScripting"/>
 	<classpathentry kind="output" path="classes"/>
 </classpath>

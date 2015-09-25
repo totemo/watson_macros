@@ -5,9 +5,9 @@
     "__comment4__": "If either dependency is missing, class resolution errors will prevent this mod from loading.",
 
     "name": "watson_macros",
-    "mcversion": "1.7.10",
-    "version": "0.8.0.21-mc1.7.10",
-    "revision": "21",
+    "mcversion": "1.8.0",
+    "version": "0.12.0.22-mc1.8.0",
+    "revision": "22",
     "author": "totemo",
     "description": "Macro/Keybind Mod integration for Watson.",
     "dependsOn": ""

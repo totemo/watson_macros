@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.logging.Level;
 
-import net.eq2online.macros.scripting.ScriptContext;
-import net.eq2online.macros.scripting.VariableCache;
+import net.eq2online.macros.scripting.parser.ScriptContext;
+import net.eq2online.macros.scripting.variable.VariableCache;
 import watson.Configuration;
 import watson.Controller;
 import watson.DisplaySettings;
@@ -72,7 +72,7 @@ public class VariableProviderWatson extends VariableCache
         else
         {
           updateVariable("WATSON_XYZ",
-            String.format(Locale.US, "%d, %d, %d", x, y, z));
+                         String.format(Locale.US, "%d, %d, %d", x, y, z));
         }
 
         Long timeStamp = (Long) variables.get("time");
@@ -97,7 +97,7 @@ public class VariableProviderWatson extends VariableCache
     catch (Exception ex)
     {
       Log.exception(Level.WARNING,
-        "exception updating WATSON_... macro variables", ex);
+                    "exception updating WATSON_... macro variables", ex);
     }
   } // UpdateVariables
 
@@ -114,37 +114,37 @@ public class VariableProviderWatson extends VariableCache
   // --------------------------------------------------------------------------
   /**
    * Update a string variable.
-   * 
+   *
    * @param name the variable name.
    * @param value the String value; if null, defaults to "".
    */
   protected void updateVariable(String name, String value)
   {
-    setCachedVariable(name, value == null ? "" : value);
+    storeVariable(name, value == null ? "" : value);
   }
 
   // --------------------------------------------------------------------------
   /**
    * Update an integer variable.
-   * 
+   *
    * @param name the variable name.
    * @param value the Integer value; if null, defaults to 0.
    */
   protected void updateVariable(String name, Integer value)
   {
-    setCachedVariable(name, value == null ? 0 : value);
+    storeVariable(name, value == null ? 0 : value);
   }
 
   // --------------------------------------------------------------------------
   /**
    * Update a boolean variable.
-   * 
+   *
    * @param name the variable name.
    * @param value the boolean value; if null, defaults to false.
    */
   protected void updateVariable(String name, Boolean value)
   {
-    setCachedVariable(name, value == null ? false : value);
+    storeVariable(name, value == null ? false : value);
   }
 
   // --------------------------------------------------------------------------
