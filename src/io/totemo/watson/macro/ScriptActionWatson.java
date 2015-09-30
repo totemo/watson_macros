@@ -204,8 +204,7 @@ public class ScriptActionWatson extends ScriptActionBase
   public boolean canExecuteNow(IScriptActionProvider provider, IMacro macro, IMacroAction instance, String rawParams,
                                String[] params)
   {
-    // TODO Auto-generated method stub
-    return false;
+    return true;
   }
 
   // --------------------------------------------------------------------------
@@ -265,7 +264,7 @@ public class ScriptActionWatson extends ScriptActionBase
   @Override
   public boolean checkExecutePermission()
   {
-    return false;
+    return true;
   }
 
   // --------------------------------------------------------------------------
