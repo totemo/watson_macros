@@ -6,8 +6,8 @@
 
     "name": "watson_macros",
     "mcversion": "1.8.0",
-    "version": "0.12.0.22-mc1.8.0",
-    "revision": "22",
+    "version": "0.12.1.24-mc1.8.0",
+    "revision": "24",
     "author": "totemo",
     "description": "Macro/Keybind Mod integration for Watson.",
     "dependsOn": ""
